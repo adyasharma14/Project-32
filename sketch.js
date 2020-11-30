@@ -180,7 +180,7 @@ function keyPressed(){
 	}
 }
 async function getBg(){
-  var responce=await fetch ("http://worldtimeapi.org/api/timezone/asia/kolkata");
+  var responce=await fetch ("https://worldtimeapi.org/api/timezone/asia/kolkata");
   var resjson=await responce.json();
   var mytime=resjson.datetime;
   var myhr=mytime.slice(11,13);
